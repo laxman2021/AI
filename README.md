@@ -21,6 +21,8 @@ pip install google-generativeai
 ```
 
 2. Set up your API key:
+   - Go to https://aistudio.google.com/welcome
+   - Create a Project
    - Add your API key to the scripts (or use environment variables)
 
 ## Usage
