@@ -38,7 +38,7 @@ python ex1.py
 Type 'exit' to quit the chat.
 
 ## Example
-!(AI.png)
+![AI Output](AI.png)
 
 ## License
 
