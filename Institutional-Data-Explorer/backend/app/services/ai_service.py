@@ -6,11 +6,18 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# Base backend folder
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# Models folder
 MODELS_DIR = os.path.join(BASE_DIR, "models")
+
+# Create models folder if not exists
 os.makedirs(MODELS_DIR, exist_ok=True)
+
 MODEL_PATH = os.path.join(MODELS_DIR, "model.pkl")
 COLUMNS_PATH = os.path.join(MODELS_DIR, "model_columns.pkl")
+
 
 def train_model(csv_path, target):
 
@@ -20,17 +27,22 @@ def train_model(csv_path, target):
 
     print(df.head())
 
-    # Separate features and target
+    # Convert categorical columns
+    df = pd.get_dummies(df)
+
+    # Check target exists
+    if target not in df.columns:
+        return {
+            "error": f"Target column '{target}' not found"
+        }
+
     X = df.drop(columns=[target])
     y = df[target]
 
-    # Convert only feature columns
-    X = pd.get_dummies(X)
-
-    # Save columns
+    # Save training columns
     joblib.dump(X.columns.tolist(), COLUMNS_PATH)
 
-    # Split data
+    # Split dataset
     X_train, X_test, y_train, y_test = train_test_split(
         X,
         y,
@@ -52,6 +64,7 @@ def train_model(csv_path, target):
     accuracy = accuracy_score(y_test, predictions)
 
     return {
+        "message": "Model trained successfully",
         "accuracy": round(accuracy * 100, 2)
     }
 
@@ -60,25 +73,20 @@ def predict(payload):
 
     print("Loading model...")
 
-    model = joblib.load(MODEL_PATH)
+    # Check model exists
+    if not os.path.exists(MODEL_PATH):
+        return {
+            "error": "Model not trained yet"
+        }
 
+    model = joblib.load(MODEL_PATH)
     columns = joblib.load(COLUMNS_PATH)
 
-    # Create dataframe
+    # Convert request to dataframe
     df = pd.DataFrame([payload])
 
-    # # Convert categorical values
-    # df = pd.get_dummies(df)
-
-    # Separate features and target
-    X = df.drop(columns=[target])
-    y = df[target]
-
-    # Convert ONLY X
-    X = pd.get_dummies(X)
-
-    # Save columns
-    joblib.dump(X.columns.tolist(), COLUMNS_PATH)
+    # Convert categorical data
+    df = pd.get_dummies(df)
 
     # Match training columns
     df = df.reindex(columns=columns, fill_value=0)
@@ -89,5 +97,6 @@ def predict(payload):
     prediction = model.predict(df)
 
     return {
-        "prediction": prediction[0]
+        "prediction": str(prediction[0])
     }
+    

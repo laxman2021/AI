@@ -1,23 +1,40 @@
 from fastapi import APIRouter
 from app.services.ai_service import train_model, predict
-from typing import Any
 import os
 
-router = APIRouter(prefix="/ai", tags=["AI"])
+router = APIRouter(
+    prefix="/ai",
+    tags=["AI"]
+)
+
+# BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(
+    os.path.dirname(
+        os.path.dirname(os.path.abspath(__file__))
+    )
+)
+UPLOAD_DIR = os.path.join(BASE_DIR, "uploads")
 
 
 @router.post("/train/{dataset_id}")
 def train(dataset_id: int, target: str):
 
-    csv_path = f"data/{dataset_id}.csv"
+    csv_path = os.path.join(
+        UPLOAD_DIR,
+        f"{dataset_id}.csv"
+    )
+
+    print("CSV PATH:", csv_path)
 
     if not os.path.exists(csv_path):
-        return {"error": "Dataset not found"}
+        return {
+            "error": "Dataset not found"
+        }
 
-    result = train_model(csv_path, target)
+    return train_model(csv_path, target)
 
-    return result
 
 @router.post("/predict")
-def make_prediction(payload: dict[str, Any]):
+def make_prediction(payload: dict):
+
     return predict(payload)
