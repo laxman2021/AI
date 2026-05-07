@@ -1,30 +1,26 @@
-from fastapi import APIRouter, Depends
-from sqlalchemy.orm import Session
-from app.db import SessionLocal
-from app.models import Record
+from fastapi import APIRouter
 from app.services.ai_service import train_model, predict
-import pandas as pd
+import os
 
-router = APIRouter()
+router = APIRouter(prefix="/ai", tags=["AI"])
 
-def get_db():
-    db = SessionLocal()
-    try:
-        yield db
-    finally:
-        db.close()
 
 @router.post("/train/{dataset_id}")
-def train(dataset_id: int, target: str, db: Session = Depends(get_db)):
-    records = db.query(Record).filter(Record.dataset_id == dataset_id).all()
-    data = [r.data for r in records]
-    df = pd.DataFrame(data)
+def train(dataset_id: int, target: str):
 
-    acc = train_model(df, target)
+    csv_path = f"data/{dataset_id}.csv"
 
-    return {"accuracy": acc}
+    if not os.path.exists(csv_path):
+        return {"error": "Dataset not found"}
+
+    result = train_model(csv_path, target)
+
+    return result
+
 
 @router.post("/predict")
 def make_prediction(payload: dict):
+
     result = predict(payload)
-    return {"prediction": result}
+
+    return result
