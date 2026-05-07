@@ -7,7 +7,12 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
 
 # Base backend folder
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(
+    os.path.dirname(
+        os.path.dirname(os.path.abspath(__file__))
+    )
+)
 
 # Models folder
 MODELS_DIR = os.path.join(BASE_DIR, "models")
