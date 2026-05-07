@@ -11,8 +11,8 @@ app = FastAPI()
 app.include_router(datasets.router)
 app.include_router(ai.router)
 
-app.include_router(datasets.router, prefix="/datasets")
-app.include_router(ai.router, prefix="/ai")
+# app.include_router(datasets.router, prefix="/datasets")
+# app.include_router(ai.router, prefix="/ai")
 
 @app.get("/")
 def root():

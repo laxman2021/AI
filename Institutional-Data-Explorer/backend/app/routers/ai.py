@@ -1,5 +1,6 @@
 from fastapi import APIRouter
 from app.services.ai_service import train_model, predict
+from typing import Any
 import os
 
 router = APIRouter(prefix="/ai", tags=["AI"])
@@ -17,10 +18,6 @@ def train(dataset_id: int, target: str):
 
     return result
 
-
 @router.post("/predict")
-def make_prediction(payload: dict):
-
-    result = predict(payload)
-
-    return result
+def make_prediction(payload: dict[str, Any]):
+    return predict(payload)
