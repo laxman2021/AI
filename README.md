@@ -1,48 +1,30 @@
-# Python Project
+# AI Repository
 
-A Python project using Google's Generative AI API.
+A centralized repository for AI engineering projects, experiments, applications, and portfolio work.
 
-## Files
-AI
-- **ex1.py** - Alternative implementation using Google's genai client
-- **get_models.py** - Utility for retrieving available models
+## Branch Structure
 
-## Prerequisites
+This repository uses separate branches for different AI projects and areas of development.
 
-- Python 3.7+
-- Google Generative AI API key
+| Branch | Purpose |
+|---|---|
+| `main` | **Source branch** — canonical branch containing the primary/source version of the repository |
+| `ai-engineer-portfolio` | AI Engineer portfolio projects, demonstrations, and related work |
+| `google-generative-ai` | Projects and experiments using Google Generative AI technologies |
+| `institutional_data_explorer` | Institutional data exploration, analysis, and AI-powered data applications |
 
-## Installation
+## Source Branch
 
-1. Install dependencies:
-```bash
-pip install google-generativeai
-```
+### `main`
 
-2. Set up your API key:
-   - Go to https://aistudio.google.com/welcome
-   - Create a Project
-   - Add your API key to the scripts (or use environment variables)
+The `main` branch is the **source of truth** for this repository.
 
-## Usage
+All major branches originate from `main`:
 
-Run the chat application:
-```bash
-python app.py
-```
+```text
+                         ┌── ai-engineer-portfolio
+                         │
+main (SOURCE) ───────────┼── google-generative-ai
+                         │
+                         └── institutional_data_explorer
 
-Or use the alternative implementation:
-```bash
-python ex1.py
-```
-
-Type 'exit' to quit the chat.
-
-## Example 
-![AI Output](AI.png)
-
-## List All Models
-![AI Output](get_models.png)
-## License
-
-MIT
