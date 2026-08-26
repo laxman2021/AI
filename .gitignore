@@ -1,12 +1,13 @@
-# Byte-compiled / optimized / DLL files
+# ==========================================
+# Python
+# ==========================================
+
 __pycache__/
 *.py[cod]
 *$py.class
-
-# C extensions
 *.so
 
-# Distribution / packaging
+# Python packaging
 .Python
 build/
 develop-eggs/
@@ -14,7 +15,6 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
 lib64/
 parts/
 sdist/
@@ -27,102 +27,196 @@ share/python-wheels/
 *.egg
 MANIFEST
 
-# PyInstaller
-*.manifest
-*.spec
+# ==========================================
+# Virtual Environments
+# ==========================================
 
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
+.venv/
+venv/
+env/
+ENV/
+.conda/
+conda-env/
 
-# Unit test / coverage reports
+# ==========================================
+# Environment / Secrets
+# ==========================================
+
+.env
+.env.*
+!.env.example
+
+# API keys / credentials
+*.pem
+*.key
+credentials.json
+service-account*.json
+secrets.json
+
+# ==========================================
+# Jupyter Notebook
+# ==========================================
+
+.ipynb_checkpoints/
+
+# ==========================================
+# AI / ML Artifacts
+# ==========================================
+
+# Model files
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+*.onnx
+*.h5
+*.keras
+*.pkl
+*.pickle
+*.joblib
+
+# Model/output directories
+models/
+checkpoints/
+outputs/
+runs/
+artifacts/
+
+# Hugging Face cache
+.cache/
+huggingface/
+transformers_cache/
+
+# ==========================================
+# Data
+# ==========================================
+
+# Local datasets
+data/
+datasets/
+
+# Large/local data files
+*.csv
+*.tsv
+*.jsonl
+*.parquet
+*.feather
+*.sqlite
+*.db
+
+# Keep example/sample data if needed
+!data/sample/
+!data/example/
+
+# ==========================================
+# Logs
+# ==========================================
+
+*.log
+logs/
+
+# ==========================================
+# Temporary Files
+# ==========================================
+
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+
+# ==========================================
+# IDEs / Editors
+# ==========================================
+
+.vscode/
+.idea/
+*.iml
+
+# VS Code local settings
+.history/
+
+# ==========================================
+# OS Files
+# ==========================================
+
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+Desktop.ini
+
+# ==========================================
+# Testing / Coverage
+# ==========================================
+
+.pytest_cache/
+.coverage
+.coverage.*
 htmlcov/
 .tox/
 .nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py,cover
-.hypothesis/
-.pytest_cache/
-
-# Translations
-*.mo
-*.pot
-
-# Django stuff:
-*.log
-local_settings.py
-db.sqlite3
-db.sqlite3-journal
-
-# Flask stuff:
-instance/
-.webassets-cache
-
-# Scrapy stuff:
-.scrapy
-
-# Sphinx documentation
-docs/_build/
-
-# PyBuilder
-target/
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# IPython
-profile_default/
-ipython_config.py
-
-# pyenv
-.python-version
-
-# pipenv
-Pipfile.lock
-
-# PEP 582
-__pypackages__/
-
-# Celery stuff
-celerybeat-schedule
-celerybeat.pid
-
-# SageMath parsed files
-*.sage.py
-
-# Environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-
-# Spyder project settings
-.spyderproject
-.spyproject
-
-# Rope project settings
-.ropeproject
-
-# mkdocs documentation
-/site
-
-# mypy
+.pyre/
 .mypy_cache/
 .dmypy.json
 dmypy.json
+.pytype/
 
-# Pyre type checker
-.pyre/
+# ==========================================
+# Ruff / Linters
+# ==========================================
 
-# API Keys and secrets
-*.key
-*.pem
-secrets.json
+.ruff_cache/
+
+# ==========================================
+# Streamlit
+# ==========================================
+
+.streamlit/secrets.toml
+
+# ==========================================
+# Gradio / Local App Files
+# ==========================================
+
+.gradio/
+
+# ==========================================
+# Node.js (if used for AI frontends)
+# ==========================================
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build outputs
+dist/
+build/
+.next/
+.nuxt/
+.cache/
+
+# ==========================================
+# Docker
+# ==========================================
+
+*.dockerignore
+
+# ==========================================
+# Local Development
+# ==========================================
+
+tmp/
+temp/
+.local/
+
+# ==========================================
+# OS / IDE Misc
+# ==========================================
+
+*.code-workspace
