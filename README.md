@@ -13,6 +13,12 @@ A static Next.js frontend with a separate Node.js/Express backend for GitHub, Ge
 - Server-side API key handling
 - No UI component framework required
 
+## AI Portfolio Screenshots
+
+![Home Page](./public/portfolio_1.png)
+
+![Dashboard](./public/portfolio_2.png)
+
 ## 1. Install
 
 ```bash
