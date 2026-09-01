@@ -1,0 +1,31 @@
+{
+  "name": "ai-engineer-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "dev:backend": "tsx backend/server.ts",
+    "build": "next build",
+    "build:frontend": "next build",
+    "start:backend": "tsx backend/server.ts",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "15.5.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "typescript": "^5.8.0",
+    "tsx": "^4.19.3",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.1"
+  }
+}

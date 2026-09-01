@@ -1,0 +1,63 @@
+User
+Senior Software Engineer | Staff Engineer | Full-Stack & Platform Engineering | AI-Assisted Development
+India | Open to relocation | user@gmail.com | https://www.linkedin.com/user/ | user.in | GitHub: github.com/user | AI: github.com/user/AI
+
+PROFESSIONAL SUMMARY
+Staff/Senior Software Engineer with 15+ years of experience designing, building, modernizing, and supporting production web applications and enterprise platforms. Strong full-stack background across React, Angular, Vue.js, TypeScript, JavaScript, Node.js, PHP, REST APIs, microservices, MySQL, Docker, Kubernetes, and Azure. Proven experience taking complex initiatives from requirements and technical design through implementation, debugging, performance optimization, and delivery. Experienced technical lead who collaborates closely with engineering, product, business, and customer stakeholders and mentors developers. Hands-on with AI-assisted and agentic AI workflows to improve engineering productivity, code quality, testing, and knowledge access. Two U.S. Master's degrees in Computer Science with prior U.S. professional experience.
+
+CORE SKILLS
+Full-Stack Engineering: React.js, Angular, Vue.js, TypeScript, JavaScript (ES6+), HTML5, CSS3, SASS, Node.js, PHP
+Backend & APIs: REST APIs, JSON/JSON:API, GraphQL, API integration, microservices, secure API design, middleware
+Architecture & Delivery: End-to-end application design, 0-to-1 project delivery, technical leadership, debugging, code reviews, Agile/Scrum, Git, CI/CD
+Cloud & Platform: Microsoft Azure, Docker, Kubernetes, Acquia Cloud, caching, CDN, high availability, performance optimization
+Data & Visualization: MySQL, data modeling, data pipelines, D3.js, SVG, Chart.js, interactive dashboards, data-driven UI
+CMS & Digital Platforms: Drupal 6-10, Headless/Decoupled Drupal, WordPress, Joomla, content modeling, migrations, multi-site platforms
+Security & Integrations: OAuth, JWT, Okta, AWS Cognito, SSO, secure REST integrations, performance/scalability/security
+AI & Automation: Agentic AI, AI-assisted development, code generation/refactoring, automated testing support, architecture validation, developer productivity
+
+PROFESSIONAL EXPERIENCE
+Company_1 — Staff Engineer | Bangalore, India | Sep 2022 – Present
+• Lead architecture and end-to-end development of enterprise digital platforms, from problem definition and technical design through implementation, testing, troubleshooting, and production support.
+• Design and modernize API-first, decoupled Drupal platforms using REST/JSON:API, reusable content models, integration layers, and scalable full-stack services.
+• Build and maintain production applications using React, Angular, Node.js, TypeScript, JavaScript, PHP, and REST APIs, with emphasis on readable, maintainable, and scalable code.
+• Drive technical discussions, code reviews, architecture decisions, and delivery planning while mentoring engineers and collaborating with distributed cross-functional teams.
+• Apply performance, caching, CDN, scalability, availability, and secure API practices to improve platform reliability and long-term maintainability.
+• Integrate AI-assisted and agentic AI workflows for code generation, refactoring, testing support, architecture validation, and knowledge augmentation across large codebases.
+
+Company_2 — Development Team Lead | San Francisco, CA | Mar 2022 – Mar 2023
+• Led Drupal and WordPress migration engagements from requirements gathering through implementation, validation, launch, and customer handoff.
+• Prioritized projects, created delivery timelines, assigned engineering work, reviewed code, and coordinated with customers, managers, and technical consultants.
+• Standardized migration documentation and engineering practices to improve delivery consistency, knowledge sharing, and maintainability.
+
+Company_3 — Senior Web Application Developer | Newark, CA | Sep 2019 – Dec 2021
+• Developed and supported production Drupal 8/9 web applications and full-stack features in high-performance, multi-web-hosting environments.
+• Led legacy Drupal 6/7 migration work, custom modules, multilingual capabilities, content modeling, templates, search integrations, and platform modernization.
+• Built and integrated React, Angular, and Node.js experiences; designed data visualizations with D3.js and Chart.js for data-driven user interfaces.
+• Implemented SSO and secure integrations using Okta and AWS Cognito; supported containerized deployments with Docker and Kubernetes.
+• Worked across performance, scalability, security, availability, and operability concerns for enterprise web applications.
+Company_4 — Drupal Developer | Braintree, MA | Apr 2019 – Aug 2019
+• Built and supported medium-to-large complexity web application features using Drupal, Angular, Node.js, React, REST APIs, and GraphQL.
+• Participated in technical discussions, code reviews, debugging, and secure application development for enterprise integrations.
+• Implemented responsive user interfaces and integrations with authentication services including Amazon Cognito.
+
+Company_5 — Drupal Developer | Durham, NC
+• Developed and maintained Drupal 8 enterprise publishing platforms, custom modules, migration scripts, configuration, and multilingual services.
+• Implemented security and operational best practices, troubleshooting, testing, and environment configuration across LAMP-based deployments.
+• Worked with Twig, PHP/OOP, Drupal Views, content modeling, Acquia, and legacy-system modernization.
+
+Company_6 — Drupal Developer | San Jose, CA
+• Developed and maintained Drupal 6/7/8 sites and migrated legacy Drupal 6 platforms to Drupal 8.
+• Migrated more than 200 content types to Drupal 8 and built reusable themes, modules, REST integrations, and responsive interfaces.
+• Worked with PHP, MySQL, JavaScript, jQuery, AJAX, HTML/CSS, WordPress, AWS, and Linux/Unix environments.
+
+Company_7 — Senior Web Developer | Hyderabad, India
+• Developed full-stack web applications using AngularJS, PHP, CodeIgniter, MySQL, JavaScript, Bootstrap, Drupal, and REST/AJAX integrations.
+• Built interactive data visualizations with D3.js and Chart.js and collaborated across requirements, development, testing, and release activities.
+Enter Info Labs Pvt. Ltd. — Software Developer | Visakhapatnam, India | Nov 2007 – Mar 2013
+• Built and maintained PHP/MySQL, Drupal, and WordPress applications, custom modules/plugins, themes, APIs, and database-driven interfaces.
+• Collaborated with clients on requirements and delivered web applications, integrations, payment/customer workflows, and cross-browser UI solutions.
+
+EDUCATION
+College of Engineering, University of California, Santa Cruz — M.S. in Computer Science | 2015 – 2017
+University of California, Santa Cruz — M.S. in Computer Science | 2015 – 2017
+Jawaharlal Nehru Technological University, India — B.Tech in Computer Science & Engineering | 2003 – 2007
