@@ -19,9 +19,9 @@ A static Next.js frontend with a separate Node.js/Express backend for GitHub, Ge
 
 ![Dashboard](./public/portfolio_2.png)
 
-![Cloudflare Analytics](./public/Cloudflare Analytics.png)
+![Cloudflare Analytics](./public/Cloudflare_Analytics.png)
 
-![Gemini API Usage](./public/Gemini API Usage.png)
+![Gemini API Usage](./public/Gemini_API_Usage.png)
 
 ## 1. Install
 
